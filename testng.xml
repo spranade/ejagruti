@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="regression_test" parallel="methods" thread-count="4">
+<parameter name="execute_remotely" value="N"></parameter>
+<parameter name="hub_ip_address" value="192.168.0.100"></parameter>
+<parameter name="exclude" value="0"></parameter>
+<!-- <parameter name="pdfngreport-properties" value="pdfngreport.properties" /> -->
+          
+<listeners>
+
+<listener class-name="ejagruti.finsys.listeners.SuiteListener"></listener>
+<listener class-name="ejagruti.finsys.listeners.TestCaseListener"></listener>
+<!-- <listener class-name="com.uttesh.pdfngreport.PDFReportListener"></listener> 
+<listener class-name="ejagruti.finsys.config.LaunchApplication"></listener> 
+<listener class-name="ejagruti.finsys.modules.loginModule"></listener>
+<listener class-name="ejagruti.finsys.modules.CreateCompanyModule"></listener>-->
+
+</listeners>
+
+		
+
+	<test name="1. Verify login functionality by passing valid username and password">
+		
+		<parameter name="author" value="swanand"></parameter>
+		<parameter name="category" value="Regression"></parameter>
+		<parameter name="TestCaseID" value="1"></parameter>
+		<parameter name="description" value="verify login"></parameter>
+		<parameter name="date" value="13-Feb-2018"></parameter>		
+		<parameter name="Browser" value="chrome"></parameter>
+		<parameter name="url" value="http://localhost:80/finsys/login.html"></parameter>
+		<parameter name="filepath" value="D:\\selenium\\JARS\\chromedriver.exe"></parameter>
+		<parameter name="loginusername" value="dummyfm"></parameter>
+		<parameter name="loginpassword" value="passw0rd"></parameter>
+
+		<classes>
+
+			<class name="ejagruti.finsys.config.LaunchApplication">
+				<methods>
+					<include name="launchApp"></include>
+				</methods>
+			</class>
+			<class name="ejagruti.finsys.modules.loginModule">
+				<methods>
+					<include name="login"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test>  <!--  Test -->
+	
+
+
+	<test name="2. Verify Creation of a New Company by passing all Valid Details">
+		<parameter name="author" value="swanand"></parameter>
+		<parameter name="category" value="Smoke"></parameter>
+		<parameter name="TestCaseID" value="2"></parameter>
+		<parameter name="description" value="verify create company"></parameter>
+		<parameter name="date" value="13-Feb-2018"></parameter>		
+		<parameter name="Browser" value="chrome"></parameter>
+		<parameter name="url" value="http://localhost:80/finsys/login.html"></parameter>
+		<parameter name="filepath" value="D:\\selenium\\JARS\\chromedriver.exe"></parameter>
+		<parameter name="loginusername" value="dummyfm"></parameter>
+		<parameter name="loginpassword" value="passw0rd"></parameter>
+		<parameter name="CompanyName" value="Ejagruti2020"></parameter>
+		<parameter name="CompanyType" value="IT"></parameter>
+		<parameter name="Subtype" value="Service"></parameter>
+		<parameter name="addr" value="Warje Pune"></parameter>
+		<parameter name="phn" value="1234567890"></parameter>
+		<parameter name="cemail" value="admin@ejagruti.com"></parameter>
+		<parameter name="pan" value="jashd234235325"></parameter>
+		<parameter name="tin" value="ashdg234252"></parameter>
+		<parameter name="mob" value="1234567890"></parameter>
+		<parameter name="web" value="www.ejagruti.com"></parameter>
+		<parameter name="country" value="INDIA"></parameter>
+		<parameter name="state" value="MAHARASHTRA"></parameter>
+		<parameter name="city" value="PUNE"></parameter>
+		<parameter name="totemp" value="500"></parameter>
+		<classes>
+		
+			<class name="ejagruti.finsys.config.LaunchApplication">
+				<methods>
+					<include name="launchApp"></include>
+				</methods>
+			</class>
+			<class name="ejagruti.finsys.modules.loginModule">
+				<methods>
+					<include name="login"></include>
+				</methods>
+			</class>
+			<class name="ejagruti.finsys.modules.CreateCompanyModule">
+				<methods>
+					<include name="clickNewCompany"></include>
+				</methods>
+			</class>
+
+		</classes>
+	</test> <!-- Test -->	
+
+</suite> <!-- Suite -->
+
+
+
+
