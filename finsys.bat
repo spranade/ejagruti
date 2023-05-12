@@ -1,3 +1,3 @@
-set projectLocation=D:\eclipse-workspace\ejagruti
+set projectLocation=E:\workspace-selenium\ejagruti
 cd %projectLocation%
 mvn clean install test -DsuiteXmlFile=testng.xml

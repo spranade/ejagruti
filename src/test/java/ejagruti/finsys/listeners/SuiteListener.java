@@ -44,7 +44,7 @@ public class SuiteListener implements ISuiteListener {
 		
 		HTMLReportGenerator.TestSuiteEnd();
 
-		//SendMail.SendReportThroughMail("spranade91@gmail.com", "spranade91@gmail.com", "smtp.gmail.com" , "465", "your_password", reportFilePath, "smtp");
+		//SendMail.SendReportThroughMail("spranade91@gmail.com", "spranade@rediffmail.com", "smtp.gmail.com" , "465", "your_password", reportFilePath, "smtp");
 	
 		
 	}

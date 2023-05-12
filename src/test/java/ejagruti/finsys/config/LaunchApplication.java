@@ -252,9 +252,9 @@ public class LaunchApplication {
 		//LaunchApplication exeapl = new LaunchApplication();
 		
 		
-		//LaunchApplication.launchApp("firefox","http://server:90/finsys/login.html","D:\\selenium\\JARS\\gekodriver.exe");
-		//LaunchApplication.launchApp("chrome","http://server:90/finsys/login.html","D:\\selenium\\JARS\\chromedriver.exe");
-		LaunchApplication.launchApp("IE","http://server:90/finsys/login.html","D:\\selenium\\JARS\\IEDriverServer_32bit_OS.exe");
+		//LaunchApplication.launchApp("firefox","http://server:90/finsys/login.html","E:\\selenium\\JARS\\gekodriver.exe");
+		//LaunchApplication.launchApp("chrome","http://server:90/finsys/login.html","E:\\selenium\\JARS\\chromedriver.exe");
+		LaunchApplication.launchApp("IE","http://server:90/finsys/login.html","E:\\selenium\\JARS\\IEDriverServer_32bit_OS.exe");
 
 		
 	}

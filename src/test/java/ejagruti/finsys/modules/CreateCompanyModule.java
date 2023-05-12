@@ -179,8 +179,8 @@ public class CreateCompanyModule  {
 	/*
 	public static void main(String[] args) throws Exception {
 		//LaunchApplication la= new LaunchApplication();
-		LaunchApplication.launchApp("IE","http://server:90/finsys/login.html","D:\\selenium\\JARS\\IEDriverServer_32bit_OS.exe");
-		//LaunchApplication.launchApp("Firefox","http://localhost/finsys/login.html","D:\\selenium\\JARS\\gekodriver.exe");
+		LaunchApplication.launchApp("IE","http://server:90/finsys/login.html","E:\\selenium\\JARS\\IEDriverServer_32bit_OS.exe");
+		//LaunchApplication.launchApp("Firefox","http://localhost/finsys/login.html","E:\\selenium\\JARS\\gekodriver.exe");
 
 		loginModule lm = new loginModule();
 	
