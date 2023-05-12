@@ -30,7 +30,7 @@ public class readExcel {
 		
 		 try {
 			  // Specify the path of file
-			  File src=new File("E:\\workspace-selenium\\ejagruti\\Excel_Operations.xlsx");
+			  File src=new File("E:\\eclipse-workspace\\ejagruti\\Excel_Operations.xlsx");
 			 
 			   // load file
 			   FileInputStream fis=new FileInputStream(src);

@@ -1,4 +1,5 @@
 /target/*
+/Screenshots/*
 /test-output/*
 /logs/*
 /.idea/
@@ -6,3 +7,4 @@
 *.html
 *.txt
 /target/
+/Screenshots/

@@ -180,17 +180,17 @@ public class Excel_Operations {
 	
 	public static void main(String[] args) throws IOException{
 	
-	int rowcount= GetRowCount("E:\\workspace-selenium\\ejagruti\\Excel_Operations.xlsx","Sheet1");
+	int rowcount= GetRowCount("E:\\eclipse-workspace\\ejagruti\\Excel_Operations.xlsx","Sheet1");
 	System.out.println(rowcount);	
-	int colcount= GetColumnCount("E:\\workspace-selenium\\ejagruti\\Excel_Operations.xlsx","Sheet1",1);
+	int colcount= GetColumnCount("E:\\eclipse-workspace\\ejagruti\\Excel_Operations.xlsx","Sheet1",1);
 	System.out.println("colcount: "+colcount);	
-	String cellstring = GetCellData("E:\\workspace-selenium\\ejagruti\\Excel_Operations.xlsx","Sheet1",1,0);
+	String cellstring = GetCellData("E:\\eclipse-workspace\\ejagruti\\Excel_Operations.xlsx","Sheet1",1,0);
 	//GetCellData(String filename,int sheetno, int colno, int rowno);
 	//System.out.println(cellstring);	
-	//SetCellData("E:\\workspace-selenium\\ejagruti\\Excel_Operations.xlsx","Sheet1",2,6,"BBBBBBBB");
+	//SetCellData("E:\\eclipse-workspace\\ejagruti\\Excel_Operations.xlsx","Sheet1",2,6,"BBBBBBBB");
 	//SetCellData(filename, sheetno, colno, rowno, datastring);	
 	
-	ReadAllExcelFile("E:\\workspace-selenium\\ejagruti\\Excel_Operations.xlsx","Sheet1");
+	ReadAllExcelFile("E:\\eclipse-workspace\\ejagruti\\Excel_Operations.xlsx","Sheet1");
 	}
 
 
